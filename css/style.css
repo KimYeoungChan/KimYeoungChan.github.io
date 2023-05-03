@@ -126,7 +126,7 @@ a:hover {
 }
 
 .sect-pt4 {
-  padding-top: 4rem;
+  padding-top: 4rem;  
 }
 
 .sect-mt4 {
@@ -154,6 +154,7 @@ a:hover {
 }
 
 .subtitle-a {
+  font-size: 2rem;
   color: #4e4e4e;
 }
 
@@ -703,6 +704,11 @@ a:hover {
 /*======================================
 //--//-->   SERVICES
 ======================================*/
+
+
+#service {
+  border-bottom:3px solid #0062d3;
+}
 
 .service-box {
   background-color: #fff;
