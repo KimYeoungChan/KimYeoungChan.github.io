@@ -1269,3 +1269,192 @@ footer .credits a {
     bottom: 15px;
   }
 }
+
+/*======================================
+//--//-->   PRICING STYLES
+======================================*/
+
+.pricing-box {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.pricing-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-box.featured {
+  border: 2px solid #0078ff;
+  transform: scale(1.05);
+}
+
+.pricing-box.featured:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+  background: #0078ff;
+  color: white;
+  padding: 5px 40px;
+  transform: rotate(45deg);
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.pricing-header {
+  padding: 30px 20px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.pricing-box.featured .pricing-header {
+  background: linear-gradient(135deg, #0078ff 0%, #00d4ff 100%);
+}
+
+.pricing-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.pricing-price {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.pricing-price .currency {
+  font-size: 18px;
+  vertical-align: top;
+}
+
+.pricing-price .period {
+  font-size: 16px;
+  vertical-align: bottom;
+}
+
+.pricing-content {
+  padding: 30px 20px;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.pricing-features li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.pricing-features li:last-child {
+  border-bottom: none;
+}
+
+.pricing-features li i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.pricing-features li i.ion-checkmark-round {
+  color: #28a745;
+}
+
+.pricing-features li i.ion-close-round {
+  color: #dc3545;
+}
+
+.pricing-btn .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 추가 서비스 스타일 */
+.additional-services {
+  background: #f8f9fa;
+  padding: 40px 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.service-item {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 48px;
+  color: #0078ff;
+  margin-bottom: 15px;
+}
+
+.service-item h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1e1e1e;
+}
+
+.service-item .price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0078ff;
+  margin: 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .pricing-box.featured {
+    transform: none;
+    margin-bottom: 30px;
+  }
+  
+  .pricing-box.featured:hover {
+    transform: translateY(-10px);
+  }
+  
+  .pricing-header {
+    padding: 20px 15px 15px;
+  }
+  
+  .pricing-title {
+    font-size: 20px;
+  }
+  
+  .pricing-price {
+    font-size: 28px;
+  }
+  
+  .pricing-content {
+    padding: 20px 15px;
+  }
+  
+  .service-item {
+    margin-bottom: 20px;
+  }
+}
