@@ -9,6 +9,23 @@
 //--//-->   STYLES GENERALES
 ======================================*/
 
+/* 전체적인 Border Radius 스타일 */
+.rounded-soft {
+  border-radius: 8px !important;
+}
+
+.rounded-medium {
+  border-radius: 12px !important;
+}
+
+.rounded-large {
+  border-radius: 16px !important;
+}
+
+.rounded-xl {
+  border-radius: 20px !important;
+}
+
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
@@ -56,6 +73,7 @@ a:hover {
 .work-box,
 .card-blog {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 .box-shadow-a,
@@ -80,6 +98,7 @@ a:hover {
   height: 32px;
   margin-right: 4px;
   overflow: hidden;
+  border-radius: 50%;
 }
 
 .bg-image {
@@ -683,6 +702,7 @@ a:hover {
 
 .about-mf .about-img img {
   margin-left: 10px;
+  border-radius: 15px;
 }
 
 .skill-mf span {
@@ -692,7 +712,7 @@ a:hover {
 .skill-mf .progress {
   background-color: #cde1f8;
   margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
+  border-radius: 10px;
   height: .7rem;
 }
 
@@ -789,10 +809,12 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  border-radius: 15px;
 }
 
 .work-img img {
   transition: all 1s;
+  border-radius: 15px;
 }
 
 .work-content {
@@ -845,6 +867,7 @@ a:hover {
 
 .testimonial-box .author-test img {
   margin: 0 auto;
+  border-radius: 50%;
 }
 
 .testimonial-box .author {
@@ -982,6 +1005,7 @@ a:hover {
 .box-comments .list-comments .comment-avatar img {
   width: 80px;
   height: 80px;
+  border-radius: 50%;
 }
 
 .box-comments .list-comments .comment-author {
@@ -1105,6 +1129,7 @@ footer .credits a {
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 #errormessage {
@@ -1115,6 +1140,31 @@ footer .credits a {
   padding: 15px;
   font-weight: 600;
   margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+/* Contact form 입력 필드들 */
+.form-control {
+  border-radius: 10px !important;
+}
+
+.form-control:focus {
+  border-radius: 10px !important;
+}
+
+/* Blog 카드 이미지들 */
+.card-blog .card-img img {
+  border-radius: 15px 15px 0 0;
+}
+
+/* 추가적인 이미지 border-radius */
+img.img-fluid {
+  border-radius: 10px;
+}
+
+/* 모든 일반 이미지들 */
+img:not(.avatar):not(.rounded-circle) {
+  border-radius: 8px;
 }
 
 #sendmessage.show,
@@ -1145,7 +1195,7 @@ footer .credits a {
   -ms-user-select: none;
   user-select: none;
   font-size: 1rem;
-  border-radius: .3rem;
+  border-radius: 12px;
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
